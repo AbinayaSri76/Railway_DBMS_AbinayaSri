@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<title>Trains - Login</title>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css">
+    <img src="https://wallpaperaccess.com/full/1457254.jpg" width=100% height="300" alt="train tracks">
+    <h1>TRAINS</h1>
+    <h2>DBMS Project 2020 - 21</h2>
+</head>
+
+<body>
+    <div class="login-signin">
+        <h3>---SIGN IN---</h3>
+        <form method="POST">
+            <table>
+                <tr>
+                    <td><label for="email">Email : </label></td>
+                    <td><input type="email" name="email" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password : </label></td>
+                    <td><input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                            required /></td>
+                </tr>
+            </table>
+            <br><br>
+            <input class="sub" type="submit" value="Sign In" />
+        </form>
+        <br><br>
+        <h3>---OR---</h3>
+        <br><br>
+        <h3>---SIGN UP---</h3>
+        <form method="POST">
+            <table>
+                <tr>
+                    <td><label for="fullname">Full Name : </label></td>
+                    <td><input type="text" name="fullname" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email Address : </label></td>
+                    <td><input type="email" name="email" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password : </label></td>
+                    <td><input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                            required /></td>
+                </tr>
+                <tr>
+                    <td><label for="cpassword">Confirm Password : </label></td>
+                    <td><input type="password" name="cpassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                            required /></td>
+                </tr>
+                <tr>
+                    <td><label for="role">Designation : </label></td>
+                    <td><input type="text" name="role" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="mobileno">Mobile Number : </label></td>
+                    <td><input type="tel" name="mobileno" required /></td>
+                </tr>
+            </table>
+            <br><br>
+            <input class="sub" type="submit" value="Sign Up" />
+        </form>
+    </div>
+    <footer class="bottom">
+        <p>By : Abinaya - 20BRS1001 || Rahul Gandhi - 20BRS1264 || Likith Sai - 20BRS1265
+        </p>
+    </footer>
+</body>
+
+</html>
