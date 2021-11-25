@@ -1,20 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@1&display=swap");
 
-body
-{
-    text-align: center;
-    font-family: 'Gentium Book Basic', serif;
-    font-size: 125%;
-    background-image: url("https://wallpaperaccess.com/full/1924554.jpg");
-    margin: 0;
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
-h1
-{
-    font-size: 300%;
+body {
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-shadow: 2px 2px 2px #696969;
+    font-family: "Gentium Book Basic", serif;
+    font-size: 115%;
+    margin: 0;
+    background-color: #66288f;
+}
+
+.context {
+    width: 100%;
+    position: absolute;
+    top: 50vh;
+}
+
+.context h1 {
+    font-size: 300%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: "Gentium Book Basic", serif;
+    text-shadow: 2px 2px 2px #e9e7e7;
+    text-align: center;
+}
+
+h2 {
+    font-size: 300%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: "Gentium Book Basic", serif;
+    text-shadow: 2px 2px 2px #e9e7e7;
 }
 
 table {
@@ -23,28 +42,22 @@ table {
     margin-right: auto;
 }
 
-.login-signin
-{
+.login {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     border-width: 5px;
     padding: 25px 25px 50px 45px;
-    width: 685px;
+    width: 30%;
     flex: 60%;
-    background-image: url("https://images.unsplash.com/photo-1615716175455-9a098e2388be?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bGlnaHQlMjBncmVlbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80");
-    box-shadow: 5px 10px #888888;
+    background: linear-gradient(to left, #955dff, #6faaff);
+    box-shadow: 2.5px 5px #888888;
     box-align: center;
-    transition: 0.1s;
+    transition: 0.01s;
+    border-radius: 15px;
 }
 
-.login-signin:hover
-{
-    transform: scale(1.05);
-}
-
-input[type=submit]
-{
+button {
     display: inline-block;
     padding: 15px 25px;
     font-size: 12px;
@@ -53,31 +66,147 @@ input[type=submit]
     text-decoration: none;
     outline: none;
     color: #fff;
-    background-color: #4CAF50;
+    background-color: #4caf50;
     border: none;
     border-radius: 15px;
-    box-shadow: 0 9px #999;
-}
-input[type=submit]:hover
-{
-    background-color: #3e8e41
+    box-shadow: 0 5px #3c8a3e;
 }
 
-input[type=submit]:active
-{
+button:hover {
     background-color: #3e8e41;
-    box-shadow: 0 5px #666;
+}
+
+button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 2px #3c8a3e;
     transform: translateY(4px);
 }
 
-.bottom
-{
-    
+.bottom {
     height: 5rem;
-    background: linear-gradient(to right, #100716, #00ffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(
+        to right,
+        #100716,
+        #00ffff
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 3rem;
     color: white;
+}
+
+.area {
+    background: #66288f;
+    width: 100%;
+    height: 0%;
+}
+
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 125%;
+    overflow: hidden;
+}
+
+.circles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+}
+
+.circles li:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
 }
