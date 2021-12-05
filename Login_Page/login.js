@@ -1,8 +1,6 @@
 function clickon() {
     const e = document.getElementById('mail').value;
     const p = document.getElementById('pass').value;
-    const mpat = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    const ppat = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}$/;
     if (e == '' && p == '') {
         document.getElementById('error').innerHTML = "Enter the Email Id and the Password!";
         document.getElementById('merror').innerHTML = "";
@@ -19,6 +17,16 @@ function clickon() {
         document.getElementById('perror').innerHTML = "Enter the Password!";
     }
     else {
-        window.location.href = 'InsidePage.html';
+        if (e == 'abhinaya@gmail.com' && p == '1234') {
+            window.location.href = 'InsidePage.html';
+        }
+        else if (e == 'rg26082001@gmail.com' && p == '1234') {
+            window.location.href = 'InsidePage.html';
+        }
+        else {
+            document.getElementById('error').innerHTML = "Wrong Email Id Or Password!";
+            document.getElementById('merror').innerHTML = "";
+            document.getElementById('perror').innerHTML = "";
+        }
     }
 }
